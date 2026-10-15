@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> SampleNamejijij | Portfolio</title>
+<meta name="description" content="Portfolio of name — ceo and dev in federated learning, semantic communication and IIoT security.">
+<!--
+  HOW TO EDIT
+  Anything shown in a yellow dashed box (class="ph") is a placeholder.
+  Search this file for  class="ph"  and replace each one with your real details,
+  then remove the class so the yellow box disappears.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --text: #1d2433;
+    --muted: #5b6475;
+    --line: #e3e7ee;
+    --accent: #1f4e8c;
+    --accent-soft: #e8eff9;
+    --ph-bg: #fff6d6;
+    --ph-line: #d9a400;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f141d;
+      --card: #171e2a;
+      --text: #e6eaf2;
+      --muted: #9aa4b5;
+      --line: #263042;
+      --accent: #7fb0f0;
+      --accent-soft: #1c2a40;
+      --ph-bg: #3a3214;
+      --ph-line: #c9a227;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .ph {
+    background: var(--ph-bg);
+    border: 1px dashed var(--ph-line);
+    border-radius: 4px;
+    padding: 0 5px;
+    font-style: italic;
+  }
+
+  header.top {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    max-width: 1000px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; gap: 12px;
+  }
+  .brand { font-weight: 700; color: var(--text); }
+  .nav ul { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; overflow-x: auto; }
+  .nav ul a { color: var(--muted); font-size: 14px; font-weight: 500; white-space: nowrap; }
+  .nav ul a:hover { color: var(--accent); text-decoration: none; }
+
+  main { max-width: 1000px; margin: 0 auto; padding: 0 16px 60px; }
+
+  .hero {
+    display: grid; grid-template-columns: 140px 1fr; gap: 28px; align-items: center;
+    padding: 56px 0 40px;
+  }
+  .avatar {
+    width: 140px; height: 140px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Source Serif 4", serif; font-size: 56px; font-weight: 700;
+    border: 3px solid var(--line);
+  }
+  .hero h1 { font-family: "Source Serif 4", serif; font-size: 40px; margin: 0; line-height: 1.15; }
+  .hero .role { font-size: 18px; color: var(--muted); margin: 6px 0 14px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-block; padding: 9px 16px; border-radius: 8px; font-size: 14px; font-weight: 600;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--card); }
+  .btn:hover { text-decoration: none; opacity: .9; }
+
+  section { padding: 36px 0; border-top: 1px solid var(--line); scroll-margin-top: 60px; }
+  section h2 {
+    font-family: "Source Serif 4", serif; font-size: 26px; margin: 0 0 18px;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 20px 22px; margin-bottom: 14px;
+  }
+  .item-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; }
+  .item-head h3 { margin: 0; font-size: 17px; }
+  .when { color: var(--muted); font-size: 14px; white-space: nowrap; }
+  .where { color: var(--accent); font-weight: 500; font-size: 15px; margin: 2px 0 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 20px; }
+  .card li { margin-bottom: 4px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    background: var(--accent-soft); color: var(--accent);
+    padding: 5px 12px; border-radius: 999px; font-size: 14px; font-weight: 500;
+  }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid2 .card { margin: 0; }
+  .grid2 h3 { margin: 0 0 10px; font-size: 16px; }
+
+  .contact-list { list-style: none; padding: 0; margin: 0; }
+  .contact-list li { padding: 8px 0; border-bottom: 1px solid var(--line); display: flex; gap: 12px; }
+  .contact-list li:last-child { border-bottom: 0; }
+  .contact-list b { min-width: 120px; color: var(--muted); font-weight: 500; }
+
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px 16px; }
+
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; text-align: center; padding-top: 36px; }
+    .avatar { margin: 0 auto; width: 110px; height: 110px; font-size: 44px; }
+    .btns { justify-content: center; }
+    .hero h1 { font-size: 32px; }
+    .grid2 { grid-template-columns: 1fr; }
+    .nav ul { gap: 14px; }
+    .brand { display: none; }
+    .contact-list li { flex-direction: column; gap: 0; }
+  }
+
+  /* Print / Save as PDF = clean resume */
+  @media print {
+    header.top, .btns, footer { display: none; }
+    body { background: #fff; color: #000; }
+    .card { border: 0; padding: 6px 0; }
+    section { padding: 14px 0; break-inside: avoid; }
+    .ph { background: none; border: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <nav class="nav">
+    <a href="#top" class="brand">Himanshu</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="avatar" aria-hidden="true">H</div>
+    <div>
+      <h1>tBruce <span class="ph">Wayne</span></h1>
+      <p class="role">Batman, Gowtham; IT · Crime Researcher, IIT Gowtham</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Contact me</a>
+        <a class="btn" href="resume.pdf" download>Download CV</a>
+        <a class="btn" href="#" title="Add your Google Scholar link">Google Scholar</a>
+        <a class="btn" href="#" title="Add your LinkedIn link">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p style="margin:0">
+        I am an Assistant Professor at the School of Studies in Computer Science &amp; IT,
+        Pt. Ravishankar Shukla University, Raipur, and a PhD researcher in the Department of
+        Computer Applications at NIT Raipur. My research focuses on federated learning,
+        semantic communication, edge-deployable lightweight language models, and adversarial
+        robustness in distributed Industrial IoT (IIoT) systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <div class="item-head">
+        <h3>Assistant Professor</h3>
+        <span class="when"><span class="ph">Month</span> 2026 – Present</span>
+      </div>
+      <div class="where">School of Studies in Computer Science &amp; IT, Pt. Ravishankar Shukla University, Raipur</div>
+      <ul>
+        <li><span class="ph">Courses you teach / will teach</span></li>
+        <li><span class="ph">Other responsibilities (labs, project supervision, committees)</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="item-head">
+        <h3>PhD Researcher</h3>
+        <span class="when"><span class="ph">Start year</span> – Present</span>
+      </div>
+      <div class="where">Department of Computer Applications, NIT Raipur</div>
+      <ul>
+        <li>Thesis on federated, secure semantic communication for Industrial IoT (FedSec-SemanticIoT).</li>
+        <li>Designing a Complexity Router that uses entropy-based confidence scoring to route prompts between large and small language models across edge and cloud.</li>
+        <li>Studying Byzantine/adversarial robustness and communication-efficient token transmission for edge deployment.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="item-head">
+        <h3><span class="ph">Earlier role / teaching or industry experience</span></h3>
+        <span class="when"><span class="ph">Year – Year</span></span>
+      </div>
+      <div class="where"><span class="ph">Organisation</span></div>
+      <ul><li><span class="ph">Key responsibility or achievement</span></li></ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="card">
+      <div class="item-head">
+        <h3>Ph.D., Computer Applications</h3>
+        <span class="when"><span class="ph">Year</span> – Present</span>
+      </div>
+      <div class="where">National Institute of Technology (NIT) Raipur</div>
+      <p style="margin:0">Thesis area: Federated learning and secure semantic communication for IIoT.</p>
+    </div>
+
+    <div class="card">
+      <div class="item-head">
+        <h3><span class="ph">Master's degree (e.g. MCA / M.Tech)</span></h3>
+        <span class="when"><span class="ph">Year</span></span>
+      </div>
+      <div class="where"><span class="ph">University</span></div>
+      <p style="margin:0"><span class="ph">Score / CGPA</span></p>
+    </div>
+
+    <div class="card">
+      <div class="item-head">
+        <h3><span class="ph">Bachelor's degree</span></h3>
+        <span class="when"><span class="ph">Year</span></span>
+      </div>
+      <div class="where"><span class="ph">University</span></div>
+      <p style="margin:0"><span class="ph">Score / CGPA</span></p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin:0 0 6px;font-size:17px">Qualifications</h3>
+      <p style="margin:0"><span class="ph">UGC-NET / GATE / other exams, with year</span></p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="card">
+      <h3 style="margin:0 0 10px;font-size:17px">Research Interests</h3>
+      <div class="tags">
+        <span class="tag">Federated Learning</span>
+        <span class="tag">Semantic Communication</span>
+        <span class="tag">Industrial IoT (IIoT)</span>
+        <span class="tag">Lightweight / Edge Language Models</span>
+        <span class="tag">LLM–SLM Routing</span>
+        <span class="tag">Adversarial &amp; Byzantine Robustness</span>
+        <span class="tag">LLM Hallucination Evaluation</span>
+        <span class="tag">Agentic AI Security in CPS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item-head">
+        <h3>FedSec-SemanticIoT — PhD Thesis Framework</h3>
+        <span class="when">Ongoing</span>
+      </div>
+      <p style="margin:6px 0 0">
+        A federated, privacy-preserving and edge-deployable semantic sensing framework for IIoT.
+        It addresses four gaps: dependence on a central LLM, lack of adversarial robustness,
+        no edge deployability, and missing communication-overhead analysis.
+        Planned validation uses benchmarks including PAMAP2, whuGAIT and FER-2013.
+      </p>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <div class="card">
+      <ul style="margin:0">
+        <li><span class="ph">Author(s), "Paper title," Journal/Conference, vol., pp., Year. DOI</span></li>
+        <li><span class="ph">Author(s), "Paper title," Journal/Conference, Year. DOI</span></li>
+        <li><span class="ph">Under review / in preparation (optional)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Research &amp; Technical</h3>
+        <div class="tags">
+          <span class="tag">Federated Learning</span>
+          <span class="tag">Language Models (LLM/SLM)</span>
+          <span class="tag">IoT Security</span>
+          <span class="tag">Literature Review</span>
+          <span class="tag">Research Design</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Programming &amp; Tools</h3>
+        <p style="margin:0"><span class="ph">e.g. Python, PyTorch, Flower, LaTeX, Git</span></p>
+      </div>
+      <div class="card">
+        <h3>Teaching</h3>
+        <p style="margin:0"><span class="ph">Subjects you can teach</span></p>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <p style="margin:0"><span class="ph">e.g. Hindi, English</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTREACH / ACHIEVEMENTS -->
+  <section id="outreach">
+    <h2>Outreach &amp; Achievements</h2>
+    <div class="card">
+      <ul style="margin:0">
+        <li>Cyber-safety awareness workshop for school students <span class="ph">your role, date, place</span></li>
+        <li><span class="ph">Awards, fellowships, FDPs, workshops attended, reviewer roles</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <ul class="contact-list">
+        <li><b>Email</b> <span class="ph">your.email@example.com</span></li>
+        <li><b>Phone</b> <span class="ph">+91 XXXXX XXXXX</span></li>
+        <li><b>Office</b> School of Studies in Computer Science &amp; IT, Pt. Ravishankar Shukla University, Raipur, Chhattisgarh</li>
+        <li><b>LinkedIn</b> <span class="ph">linkedin.com/in/your-id</span></li>
+        <li><b>Google Scholar</b> <span class="ph">scholar.google.com/…</span></li>
+        <li><b>ORCID</b> <span class="ph">0000-0000-0000-0000</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Himanshu · Tip: press Ctrl+P to save this page as a PDF resume.</footer>
+
+</body>
+</html>
